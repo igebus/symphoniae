@@ -1,0 +1,4 @@
+include ':app_wear_os'
+include ':symphoniae-core'
+include ':app'
+rootProject.name = "Symphoniae"

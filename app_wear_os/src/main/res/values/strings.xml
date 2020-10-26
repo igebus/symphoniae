@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Symphoniae Wear OS</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_add_person">AddPersonActivity</string>
+    <string name="title_activity_people">PeopleActivity</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="loading">Speech recognizer is being loaded</string>
+    <string name="disabled">Select language to proceed</string>
+    <string name="title_model_download">Download</string>
+    <string name="message_model_download">Voice recognition for %s is not installed, do you want to download it?</string>
+    <string name="confirm_download">Download</string>
+    <string name="reject_download">Cancel</string>
+    <string name="title_download_error">Error</string>
+    <string name="message_download_error">An error occurred during the download. Check your internet connection.</string>
+    <string name="error_ok">Ok</string>
+</resources>

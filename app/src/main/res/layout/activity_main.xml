@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sound_graph="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+ 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+
+            <Spinner
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:entries="@array/languages"
+                android:spinnerMode="dropdown"/>
+
+            <ImageButton
+                android:id="@+id/vibrations_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_baseline_vibration_24" />
+            <ImageButton
+                android:id="@+id/personbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_baseline_person_24" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recognized_text"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="70dp">
+
+                <ImageButton
+                    android:id="@+id/mic_button"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/mic_button_background"
+                    android:src="@drawable/ic_baseline_mic_24" />
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="alertLoading" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
